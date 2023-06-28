@@ -1,0 +1,22 @@
+.home-subtitle{
+
+    position: absolute;
+    width: 300px;
+    margin-left: 10px;
+  
+
+}
+
+@media (min-width: 900px) {
+  .cardimg {
+    display: grid;
+    gap: 24px;
+   grid-template-rows: 350px 350px;
+   grid-template-columns: repeat(3, 1fr);
+   justify-content : center;
+   width: 100%;
+
+
+
+  }
+}

@@ -1,0 +1,62 @@
+.box-collapse{
+
+ 
+    margin:15px;
+
+
+}
+
+.section-title-collapse{
+  
+  display:flex;
+  justify-content:space-between;
+  background-color : #FF6060
+
+}
+
+.content{
+    height:0;
+    opacity:0;
+    display: flex;  
+   
+    transition: all 600ms ease-in-out;
+    overflow: hidden; 
+
+}
+
+.show{
+  height: 100px; 
+  opacity: 1; 
+  display:flex; 
+  overflow: visible;
+  transition: all 600ms ease-in-out; 
+   background-color: pink;
+  
+
+}
+
+
+//bouton chevron
+
+.ouvert{
+  rotate: 0deg;
+  height:auto;
+  height: auto; 
+  opacity: 1; 
+  display:block; 
+
+}
+
+.fermer{
+   rotate: 180deg;
+   height: auto; 
+      
+}
+
+.hide {
+    rotate: 0deg;
+    height:auto;
+    display: none;
+  
+}
+
