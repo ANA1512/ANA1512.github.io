@@ -2,7 +2,6 @@ import {useState} from 'react'
 import { useParams} from 'react-router-dom'
 import FilesData from '../../Data.json'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
-import { Carousel } from 'react-responsive-carousel';
 import './Slider.css'
 import BtnSlider from './btnSlider'
 
