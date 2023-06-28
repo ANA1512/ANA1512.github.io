@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Slideshow from "../../components/Slideshow";
-import Card from "../../components/Card"
 import Erreur from '../../components/Erreur'
 import FilesData from '../../Data.json'
 import Collapse from "../../components/Collapse";
@@ -19,7 +18,7 @@ export default function Logement() {
      const foundItem = FilesData.find((flat)=>flat.id ===id);
      setItem(foundItem);
     
-   },[]);
+   },[id]);
    
    // Flat not found : error page display
    if(!item){
