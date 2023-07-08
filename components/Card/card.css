@@ -1,22 +1,38 @@
-.home-subtitle{
-
+ .home-subtitle{
+   
     position: absolute;
     width: 300px;
-    margin-left: 10px;
-  
-
+    height: auto;
+    margin-left: 15px;
 }
 
-@media (min-width: 900px) {
+
+@media (min-width: 1200px) {
   .cardimg {
-    display: grid;
-    gap: 24px;
+   display: grid;
+   gap: 24px;
    grid-template-rows: 350px 350px;
    grid-template-columns: repeat(3, 1fr);
    justify-content : center;
    width: 100%;
-
-
+  
+  }
+  
+  .cardwrapper:hover{
+    cursor:pointer; 
+    transform: scale(1.01);
+    box-shadow:   3px 2px rgba(34, 34, 34, 0.2);
 
   }
+
+  .home-subtitle{
+    position: absolute;
+    width: 350px;
+    margin-left: 15px;
+  }
+
+  
 }
+
+
+

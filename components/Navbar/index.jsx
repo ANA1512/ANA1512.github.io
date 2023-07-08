@@ -5,14 +5,15 @@ import { StyledLink } from '../../utils/styles/atoms'
 import './navbar.css'
 
 
-//naviagation
+//navigation
 const NavContainer = styled.nav`
   
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
-  background-color: pink;
+  height: 120px;
+  padding: 15px;
+
 
 `
 const NavNavbar = styled.div`
@@ -26,7 +27,7 @@ const NavNavbar = styled.div`
 
 function Navbar() {
      return(
-         
+       
         <NavContainer>
              <Link to ="/">
                 <img src={logo} alt= "logo-kasa" className= "imglogo"/>
@@ -36,7 +37,7 @@ function Navbar() {
                 <StyledLink to="/apropos" className="nav_lien"> A propos</StyledLink>
            </NavNavbar>
         </NavContainer>
-
+    
      )
       
 }

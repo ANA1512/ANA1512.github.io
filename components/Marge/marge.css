@@ -1,0 +1,16 @@
+.marge{
+
+    display: flex;
+    flex-direction: column;
+    margin: 10px 100px;
+    min-height: calc( 100vh - 150px);
+}
+
+
+@media(max-width : 768px){
+
+    .marge{margin-inline: 15px;}
+}
+
+
+   

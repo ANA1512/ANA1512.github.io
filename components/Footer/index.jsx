@@ -1,13 +1,17 @@
 import styled from 'styled-components'
 import logoFooter from '../../assets/logo-footer.png'
 
+
+
 const FooterStyled = styled.div`
  
    background-color: black;
-   height:209px;
+   height:150px;
    text-align: center;
-   padding-top: 50px;
-
+   padding-top: 20px;
+   width: 100%;
+   margin-top: auto;
+  
 
 `
 const CopyrightStyled = styled.p`

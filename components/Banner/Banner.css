@@ -1,0 +1,29 @@
+.banner {
+
+   background-image: url('../../assets/hero-section.png') ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   
+   height: 180px;
+   border-radius: 10px;
+   display: flex; 
+   justify-content: center; 
+      
+}
+
+
+.banner-about {
+
+   background-image: url('../../assets/apropos.png') ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   
+   height: 180px;
+   border-radius: 10px;
+   margin-bottom: 30px;
+  
+   
+}
+

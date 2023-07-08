@@ -13,17 +13,16 @@ const [isActive, setIsActive] = useState(null)
   return (
       <div className = "box-collapse" key= {contenu.id}>
                <div className="section-title-collapse">
-                  <h3  id="texte">{contenu.part}</h3>
+                  <h3  className="contenu_txt">{contenu.part}</h3>
                   <button 
                   onClick={()=>setIsActive(!isActive)}
-                 
-                  className= {isActive ? "ouvert" : "fermer" }
+                  className= {isActive ? "open" : "close" }
                   >
-                     <img src={Arrow} alt="chevron"/>
+                     <img src={Arrow} alt="chevron"  className="chevron"/>
                   </button>
                </div>
 
-                <div className= {isActive ? "ouvert" : "hide" }
+                <div className= {isActive ? "open" : "hide" }  id="content-collapse"
                 
                 >{contenu.contenu}</div>
                
