@@ -1,0 +1,18 @@
+.section-collapse-about{
+  
+  margin-top: 30px;
+  width: 100%;
+
+}
+
+@media screen and (min-width: 1200px){
+
+  .section-collapse-about{
+    margin-top: 50px;
+    width: 715px;
+    margin:auto;
+
+
+}
+
+}
