@@ -12,3 +12,21 @@
 
 }
 
+  @media(max-width : 600px){
+
+
+    .imglogo {
+
+     width: 50%;
+     height: auto; 
+
+   }
+
+   .nav_lien {
+
+    font-size: 10px;
+
+  }
+
+    
+  }
