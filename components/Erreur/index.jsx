@@ -26,7 +26,7 @@ function Erreur() {
             <img className="img-notfound" src={notFound} alt="not found"/>
                <ErrorTitle>Oups! La page que vous demandez n'existe pas</ErrorTitle>
             <div className="returnlink">
-               <StyledLink >Retourner sur la page d'accueil</StyledLink>
+               <StyledLink to={"/"} >Retourner sur la page d'accueil</StyledLink>
             </div>
          </div>
          </Marge>
