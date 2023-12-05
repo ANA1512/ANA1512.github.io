@@ -1,5 +1,5 @@
 import logo from '../../assets/logo.png'
-import { Link } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import styled from 'styled-components'
 import { StyledLink } from '../../utils/styles/atoms'
 import './navbar.css'
@@ -25,16 +25,22 @@ const NavNavbar = styled.div`
 `
 
 
+
 function Navbar() {
+
+const {pathname} =useLocation();
+const  isPageActive = {textDecoration :" underline"};
+
+
      return(
        
         <NavContainer>
-             <Link to ="/">
+             <NavLink to ="/"  style= {pathname === '/' ? isPageActive :undefined} >
                 <img src={logo} alt= "logo-kasa" className= "imglogo"/>
-            </Link>
+            </NavLink>
             <NavNavbar>
-                <StyledLink to="/"  className="nav_lien">Accueil</StyledLink>
-                <StyledLink to="/apropos" className="nav_lien"> A propos</StyledLink>
+                <StyledLink to="/"  className="nav_lien" style={pathname ==='/' ? isPageActive : undefined}>Accueil</StyledLink>
+                <StyledLink to="/apropos" className="nav_lien" style={pathname ==='/apropos' ? isPageActive : undefined}  > A propos</StyledLink>
            </NavNavbar>
         </NavContainer>
     
