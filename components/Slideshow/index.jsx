@@ -43,10 +43,12 @@ function Slideshow(){
 
             })}
 
-        <BtnSlider moveSlide={nextSlide} direction={"next"}/>
-        <BtnSlider moveSlide={prevSlide} direction={"prev"}/>
-      
-  
+           {pictures.length>1 && (
+            <>
+              <BtnSlider moveSlide={nextSlide} direction={"next"}/>
+              <BtnSlider moveSlide={prevSlide} direction={"prev"}/>
+            </>
+          )}
        
       </div>
 
